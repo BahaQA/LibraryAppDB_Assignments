@@ -7,6 +7,13 @@ Feature: As a data consumer, I want the user information are stored in mySql DB 
     Then verify all users has unique ID
 
 
+  @wip @db @ui
+  Scenario: verify users has unique IDs2
+    When Execute query to get all IDs from users2
+    Then verify all users has unique ID2
+
+
+  @wip @db @ui
   Scenario: verify users table columns
     When Execute query to get all columns
     Then verify the below columns are listed in result
