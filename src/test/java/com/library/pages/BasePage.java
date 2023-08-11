@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 /**
  * parent class for concrete Page object classes
@@ -16,6 +17,9 @@ public abstract  class BasePage {
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+
+
 
 
     @FindBy(tagName = "h3")

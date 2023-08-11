@@ -4,13 +4,19 @@ import com.library.utility.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class DashBoardPage extends BasePage
 {
 
 
+
     @FindBy(id = "borrowed_books")
     public WebElement borrowedBooksNumber;
+
+    @FindBy(xpath = "//h2[@id='borrowed_books']")
+    public WebElement getBorrowedBooksNumber2;
 
     @FindBy(id = "user_count")
     public WebElement usersNumber;

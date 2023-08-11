@@ -5,6 +5,7 @@ import com.library.utility.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 
 public class LoginPage {
@@ -12,6 +13,9 @@ public class LoginPage {
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+
+
 
     @FindBy(id = "inputEmail")
     public WebElement emailBox;
